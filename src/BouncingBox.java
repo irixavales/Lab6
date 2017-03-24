@@ -19,7 +19,7 @@ public class BouncingBox extends JComponent {
                 f.setTrajectory(360 - f.getTrajectory()); //figure will bounce at the same angle it hits a horizontal line
             }
             else if (f.leftBorderCollision() == true || f.rightBorderCollision(width) == true) {
-            	f.setTrajectory(90 + f.getTrajectory()); //figure will bounce at the same angle it hits a vertical line
+            	f.setTrajectory(180 - f.getTrajectory()); //figure will bounce at the same angle it hits a vertical line
             }
             f.draw(g); f.move();
         }
